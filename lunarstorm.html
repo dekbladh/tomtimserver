@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LunarStorm</title>
+    <style>
+        body {
+            background-color: #000033;
+            font-family: Verdana, Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            color: #FFFFFF;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 760px;
+            margin: 0 auto;
+            background-color: #000033;
+        }
+
+        .header {
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .logo {
+            font-family: Arial, sans-serif;
+            font-size: 36px;
+            font-weight: bold;
+            color: #FFFFFF;
+            letter-spacing: 2px;
+            text-shadow: 0 0 5px #66CCFF;
+        }
+
+        .navigation {
+            background-color: #0066CC;
+            border: 2px outset #3399FF;
+            border-radius: 5px 5px 0 0;
+            margin-top: 5px;
+        }
+
+        .nav-tab {
+            display: inline-block;
+            background: linear-gradient(to bottom, #3399FF, #0066CC);
+            border: 1px outset #3399FF;
+            padding: 5px 10px;
+            margin: 5px;
+            color: #FFFFFF;
+            font-weight: bold;
+            border-radius: 5px 5px 0 0;
+            text-decoration: none;
+        }
+
+        .nav-tab:hover {
+            background: linear-gradient(to bottom, #66CCFF, #3399FF);
+        }
+
+        .content {
+            border: 2px outset #3399FF;
+            background-color: #003366;
+            padding: 10px;
+            margin-top: 2px;
+        }
+
+        .profile-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .profile-avatar {
+            width: 150px;
+            height: 150px;
+            background-color: #0066CC;
+            border: 2px outset #3399FF;
+            text-align: center;
+            vertical-align: middle;
+            font-weight: bold;
+        }
+
+        .profile-info {
+            vertical-align: top;
+            padding-left: 10px;
+        }
+
+        .info-box {
+            background-color: #0066CC;
+            border: 2px outset #3399FF;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+
+        .status {
+            background-color: #003366;
+            border: 1px solid #3399FF;
+            padding: 5px;
+            margin-bottom: 5px;
+        }
+
+        .guestbook {
+            background-color: #0066CC;
+            border: 2px outset #3399FF;
+            padding: 8px;
+            margin-top: 20px;
+        }
+
+        .guestbook-entry {
+            background-color: #003366;
+            border: 1px solid #3399FF;
+            padding: 5px;
+            margin-bottom: 5px;
+        }
+
+        .kp-counter {
+            background-color: #0066CC;
+            border: 2px outset #3399FF;
+            padding: 5px;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .button {
+            background: linear-gradient(to bottom, #3399FF, #0066CC);
+            border: 2px outset #3399FF;
+            color: #FFFFFF;
+            font-weight: bold;
+            padding: 3px 8px;
+            margin-top: 5px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background: linear-gradient(to bottom, #66CCFF, #3399FF);
+        }
+
+        .footer {
+            background-color: #003366;
+            border: 2px outset #3399FF;
+            text-align: center;
+            font-size: 10px;
+            padding: 5px;
+            margin-top: 10px;
+        }
+
+        .online-status {
+            color: #00FF00;
+            font-weight: bold;
+        }
+
+        .offline-status {
+            color: #FF0000;
+            font-weight: bold;
+        }
+
+        .section-header {
+            background: linear-gradient(to right, #0066CC, #003366);
+            padding: 3px;
+            font-weight: bold;
+            border: 1px solid #3399FF;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">LUNARSTORM</div>
+            <div style="color: #66CCFF; margin-top: -5px;">Mötesplatsen för dig och dina vänner</div>
+        </div>
+
+        <div class="navigation">
+            <a href="#" class="nav-tab">HEM</a>
+            <a href="#" class="nav-tab">DAGBOK</a>
+            <a href="#" class="nav-tab">GÄSTBOK</a>
+            <a href="#" class="nav-tab">KP</a>
+            <a href="#" class="nav-tab">FORUM</a>
+            <a href="#" class="nav-tab">KLOTTERPLANK</a>
+            <a href="#" class="nav-tab">VÄNNER</a>
+        </div>
+
+        <div class="content">
+            <table class="profile-table">
+                <tr>
+                    <td class="profile-avatar" width="150">
+                        <div style="margin-top: 60px;">PROFILBILD</div>
+                    </td>
+                    <td class="profile-info">
+                        <div class="section-header">Personuppgifter</div>
+                        <div class="info-box">
+                            <strong>Alias:</strong> LunarUser<br>
+                            <strong>Ålder:</strong> 18 år<br>
+                            <strong>Kön:</strong> Kille<br>
+                            <strong>Ort:</strong> Stockholm<br>
+                            <strong>Status:</strong> <span class="online-status">● Online</span><br>
+                            <strong>Medlem sedan:</strong> 2002-05-15
+                        </div>
+
+                        <div class="section-header">Status</div>
+                        <div class="status">
+                            "Hänger på Lunarstorm och bygger min sida... :)"
+                        </div>
+
+                        <div class="section-header">Presentation</div>
+                        <div class="info-box">
+                            Hej! Jag är en 18-årig kille från Stockholm som gillar datorer, musik och att hänga med kompisar. Adda mig om du vill snacka!
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+            <div class="guestbook">
+                <div class="section-header">Gästbok (12 inlägg)</div>
+                
+                <div class="guestbook-entry">
+                    <strong>PartyQueen98</strong> (2002-12-15 14:32):<br>
+                    Najs sida du har! Adda mig! //*KrAm*//
+                </div>
+                
+                <div class="guestbook-entry">
+                    <strong>HockeyKillen</strong> (2002-12-14 19:07):<br>
+                    Tja! Hur är läget? Ska du på festen på lördag?
+                </div>
+                
+                <div class="guestbook-entry">
+                    <strong>BlomBlom</strong> (2002-12-13 21:15):<br>
+                    *kramar* Saknar dig! Vi måste höras snart!
+                </div>
+                
+                <button class="button">Skriv i gästboken</button>
+            </div>
+
+            <div class="kp-counter">
+                <div><strong>KP:</strong> 463</div>
+                <div><strong>Besökare:</strong> 1337</div>
+                <div><strong>Senast online:</strong> Idag 13:35</div>
+            </div>
+        </div>
+
+        <div class="footer">
+            © 2002 LunarStorm - Bästa mötesplatsen på nätet! - <a href="#" style="color: #66CCFF;">Hjälp</a> - <a href="#" style="color: #66CCFF;">Om LunarStorm</a>
+        </div>
+    </div>
+</body>
+</html>
+
