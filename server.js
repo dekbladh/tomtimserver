@@ -56,9 +56,22 @@ app.get('/about', (req, res) => {
     res.sendFile("about.html", { root: __dirname });
 })
 
-//skapa en post metod
-app.post('', (req, res) => {
-    // i Req.data ligger inkommande payload
-    const payload = req.body;
-    res.send(payload.name, + '' + payload.age);
-});
+//Skapa en POST metod
+app.post("", (req, res) => {
+    //I req.body ligger inkommande payload
+    const payload = req.body
+    //Payload innehhållet 2st attribut; name, age
+  
+    //JSON-stringify payload
+    const jsonData = JSON.stringify(payload, null, 2)
+  
+    //Spara JSON-data till fil
+    fs.writeFile(jsonFilePath, jsonData, (err) => {
+      if (err) console.log(err)
+    })
+  
+    //Skicka tillbaka response
+    res.send(`Data sparad: ${jsonData}`)
+    //res.send("Mitt namn är " + payload.name + " och jag är " + payload.age + " år gammal!")
+    //res.send(`Mitt namn är ${payload.name} och jag är ${payload.age} år gammal`)
+  })
